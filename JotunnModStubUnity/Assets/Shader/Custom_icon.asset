@@ -1,0 +1,818 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!48 &4800000
+Shader:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Custom/icon
+  m_ParsedForm:
+    m_PropInfo:
+      m_Props:
+      - m_Name: _MainTex
+        m_Description: Texture
+        m_Attributes: []
+        m_Type: 4
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: white
+          m_TexDim: 2
+      - m_Name: _Color
+        m_Description: Tint
+        m_Attributes: []
+        m_Type: 0
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 1
+        m_DefValue[2]: 1
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _Saturation
+        m_Description: Saturation
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: -0.5
+        m_DefValue[2]: 0.5
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _Brightness
+        m_Description: Brightness
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 2
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _ShadowOffsetX
+        m_Description: ShadowOffsetX
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0.1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _ShadowOffsetY
+        m_Description: ShadowOffsetY
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0.1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _ShadowIntensity
+        m_Description: Shadow intensity
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _PixelSize
+        m_Description: PixelSize
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _PixelIntensity
+        m_Description: Pixel intensity
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _PixelAlphaIntensity
+        m_Description: Pixel alpha intensity
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _StencilComp
+        m_Description: Stencil Comparison
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 8
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _Stencil
+        m_Description: Stencil ID
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _StencilOp
+        m_Description: Stencil Operation
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _StencilWriteMask
+        m_Description: Stencil Write Mask
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 255
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _StencilReadMask
+        m_Description: Stencil Read Mask
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 255
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+      - m_Name: _ColorMask
+        m_Description: Color Mask
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 1
+        m_DefValue[0]: 15
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName:
+          m_TexDim: 1
+    m_SubShaders:
+    - m_Passes:
+      - serializedVersion: 2
+        m_EditorDataHash:
+        - serializedVersion: 2
+          Hash: 34440f1457226febf8b1a84e482e6a04
+        - serializedVersion: 2
+          Hash: b8c4cfd9ddb1c99dff110465cd4e3707
+        m_Platforms: 0412
+        m_NameIndices:
+          $Globals: 1
+          _Brightness: 10
+          _MainTex: 0
+          _MainTex_TexelSize: 2
+          _PixelAlphaIntensity: 8
+          _PixelIntensity: 7
+          _PixelSize: 6
+          _Saturation: 9
+          _ShadowIntensity: 5
+          _ShadowOffsetX: 3
+          _ShadowOffsetY: 4
+        m_Type: 0
+        m_State:
+          serializedVersion: 2
+          m_Name:
+          rtBlend0:
+            srcBlend:
+              val: 5
+              name: '<noninit>'
+            destBlend:
+              val: 10
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 5
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 10
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 0
+              name: _ColorMask
+          rtBlend1:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend2:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend3:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend4:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend5:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend6:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtBlend7:
+            srcBlend:
+              val: 1
+              name: '<noninit>'
+            destBlend:
+              val: 0
+              name: '<noninit>'
+            srcBlendAlpha:
+              val: 1
+              name: '<noninit>'
+            destBlendAlpha:
+              val: 0
+              name: '<noninit>'
+            blendOp:
+              val: 0
+              name: '<noninit>'
+            blendOpAlpha:
+              val: 0
+              name: '<noninit>'
+            colMask:
+              val: 15
+              name: '<noninit>'
+          rtSeparateBlend: 0
+          zClip:
+            val: 1
+            name: '<noninit>'
+          zTest:
+            val: 0
+            name: unity_GUIZTestMode
+          zWrite:
+            val: 0
+            name: '<noninit>'
+          culling:
+            val: 0
+            name: '<noninit>'
+          conservative:
+            val: 0
+            name: '<noninit>'
+          offsetFactor:
+            val: 0
+            name: '<noninit>'
+          offsetUnits:
+            val: 0
+            name: '<noninit>'
+          alphaToMask:
+            val: 0
+            name: '<noninit>'
+          stencilOp:
+            pass:
+              val: 0
+              name: _StencilOp
+            fail:
+              val: 0
+              name: '<noninit>'
+            zFail:
+              val: 0
+              name: '<noninit>'
+            comp:
+              val: 0
+              name: _StencilComp
+          stencilOpFront:
+            pass:
+              val: 0
+              name: '<noninit>'
+            fail:
+              val: 0
+              name: '<noninit>'
+            zFail:
+              val: 0
+              name: '<noninit>'
+            comp:
+              val: 8
+              name: '<noninit>'
+          stencilOpBack:
+            pass:
+              val: 0
+              name: '<noninit>'
+            fail:
+              val: 0
+              name: '<noninit>'
+            zFail:
+              val: 0
+              name: '<noninit>'
+            comp:
+              val: 8
+              name: '<noninit>'
+          stencilReadMask:
+            val: 0
+            name: _StencilReadMask
+          stencilWriteMask:
+            val: 0
+            name: _StencilWriteMask
+          stencilRef:
+            val: 0
+            name: _Stencil
+          fogStart:
+            val: 0
+            name: unity_FogStart
+          fogEnd:
+            val: 0
+            name: unity_FogEnd
+          fogDensity:
+            val: 0
+            name: unity_FogDensity
+          fogColor:
+            x:
+              val: 0
+              name: '<noninit>'
+            y:
+              val: 0
+              name: '<noninit>'
+            z:
+              val: 0
+              name: '<noninit>'
+            w:
+              val: 0
+              name: '<noninit>'
+            name: unity_FogColor
+          fogMode: -1
+          gpuProgramID: 16357
+          m_Tags:
+            tags:
+              CanUseSpriteAtlas: true
+              IGNOREPROJECTOR: true
+              PreviewType: Plane
+              QUEUE: Transparent
+              RenderType: Transparent
+          m_LOD: 100
+          lighting: 0
+        m_ProgramMask: 6
+        progVertex:
+          m_SubPrograms: []
+          m_PlayerSubPrograms:
+          - []
+          - []
+          - []
+          - - m_BlobIndex: 1
+              m_KeywordIndices: []
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 15
+            - m_BlobIndex: 2
+              m_KeywordIndices:
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 15
+            - m_BlobIndex: 3
+              m_KeywordIndices:
+              - 4
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 15
+            - m_BlobIndex: 4
+              m_KeywordIndices:
+              - 4
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 15
+            - m_BlobIndex: 4
+              m_KeywordIndices: []
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 25
+            - m_BlobIndex: 5
+              m_KeywordIndices:
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 25
+            - m_BlobIndex: 6
+              m_KeywordIndices:
+              - 4
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 25
+            - m_BlobIndex: 7
+              m_KeywordIndices:
+              - 4
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 25
+          m_ParameterBlobIndices:
+          - []
+          - []
+          - []
+          - - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 1
+            - 2
+            - 3
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams: []
+            m_BufferParams: []
+            m_ConstantBuffers: []
+            m_ConstantBufferBindings: []
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+        progFragment:
+          m_SubPrograms: []
+          m_PlayerSubPrograms:
+          - []
+          - []
+          - []
+          - - m_BlobIndex: 7
+              m_KeywordIndices: []
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 17
+            - m_BlobIndex: 8
+              m_KeywordIndices:
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 17
+            - m_BlobIndex: 9
+              m_KeywordIndices:
+              - 4
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 17
+            - m_BlobIndex: 10
+              m_KeywordIndices:
+              - 4
+              - 5
+              m_ShaderRequirements: 33
+              m_GpuProgramType: 17
+          m_ParameterBlobIndices:
+          - []
+          - []
+          - []
+          - - 5
+            - 5
+            - 6
+            - 6
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams:
+            - m_NameIndex: 0
+              m_Index: 0
+              m_SamplerIndex: 0
+              m_MultiSampled: 0
+              m_Dim: 2
+            m_BufferParams: []
+            m_ConstantBuffers:
+            - serializedVersion: 2
+              m_NameIndex: 1
+              m_MatrixParams: []
+              m_VectorParams:
+              - m_NameIndex: 2
+                m_Index: 64
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 4
+              - m_NameIndex: 3
+                m_Index: 80
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 4
+                m_Index: 84
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 5
+                m_Index: 88
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 6
+                m_Index: 112
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 7
+                m_Index: 116
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 8
+                m_Index: 120
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 9
+                m_Index: 124
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              - m_NameIndex: 10
+                m_Index: 128
+                m_ArraySize: 0
+                m_Type: 0
+                m_Dim: 1
+              m_StructParams: []
+              m_Size: 144
+              m_IsPartialCB: 1
+            m_ConstantBufferBindings:
+            - m_NameIndex: 1
+              m_Index: 0
+              m_ArraySize: 1
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+        progGeometry:
+          m_SubPrograms: []
+          m_PlayerSubPrograms: []
+          m_ParameterBlobIndices: []
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams: []
+            m_BufferParams: []
+            m_ConstantBuffers: []
+            m_ConstantBufferBindings: []
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask: []
+        progHull:
+          m_SubPrograms: []
+          m_PlayerSubPrograms: []
+          m_ParameterBlobIndices: []
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams: []
+            m_BufferParams: []
+            m_ConstantBuffers: []
+            m_ConstantBufferBindings: []
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask: []
+        progDomain:
+          m_SubPrograms: []
+          m_PlayerSubPrograms: []
+          m_ParameterBlobIndices: []
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams: []
+            m_BufferParams: []
+            m_ConstantBuffers: []
+            m_ConstantBufferBindings: []
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask: []
+        progRayTracing:
+          m_SubPrograms: []
+          m_PlayerSubPrograms: []
+          m_ParameterBlobIndices: []
+          m_CommonParameters:
+            m_VectorParams: []
+            m_MatrixParams: []
+            m_TextureParams: []
+            m_BufferParams: []
+            m_ConstantBuffers: []
+            m_ConstantBufferBindings: []
+            m_UAVParams: []
+            m_Samplers: []
+          m_SerializedKeywordStateMask: []
+        m_HasInstancingVariant: 0
+        m_HasProceduralInstancingVariant: 0
+        m_UseName:
+        m_Name:
+        m_TextureName:
+        m_Tags:
+          tags: {}
+        m_PackageRequirements:
+          m_Requirements: []
+          m_StatusMessage:
+          m_CombinedStatus: 0
+      m_Tags:
+        tags:
+          CanUseSpriteAtlas: true
+          IGNOREPROJECTOR: true
+          PreviewType: Plane
+          QUEUE: Transparent
+          RenderType: Transparent
+      m_LOD: 100
+      m_PackageRequirements:
+        m_Requirements: []
+        m_StatusMessage:
+        m_CombinedStatus: 0
+    m_KeywordNames:
+    - STEREO_INSTANCING_ON
+    - UNITY_SINGLE_PASS_STEREO
+    - STEREO_MULTIVIEW_ON
+    - STEREO_CUBEMAP_RENDER_ON
+    - UNITY_UI_CLIP_RECT
+    - UNITY_UI_ALPHACLIP
+    m_KeywordFlags: 000000000000
+    m_Name: Custom/icon
+    m_CustomEditorName:
+    m_FallbackName:
+    m_Dependencies: []
+    m_CustomEditorForRenderPipelines: []
+    m_DisableNoSubshadersMessage: 0
+  platforms:
+  - 4
+  - 18
+  offsets:
+  - - 0
+  - - 1993
+  compressedLengths:
+  - - 1993
+  - - 4222
+  decompressedLengths:
+  - - 12884
+  - - 17184
+  compressedBlob: b10b00000088000000440100010062cc010000a4030c005370050000bc0c00262c090c0053e80c0000d40c0052bc100000340b006300f01000005c0c00624c11000098070c0053e4180000f40c0062d820000078080c00625029000004090c006eba750a0c04000100002b00c024476c6f62616c7390000000a700a2060000005f436f6c6f722400001400083c0013200800f3020c000000556e69747950657244726177b02c005013000000751800f3015f4f626a656374546f576f726c640000480013042800088800170d4c00504672616d65200112012800150e50009f4d61747269785650004c0002131009001b03d800086c000cb400170140000f840001001c002602004401570f000000095000041c002062030c002f030001000ff00544584243f241f20c61cadf3a61b4f310b3d0d28b6600223c03ba00f7022c0000009c000000280100004953474e68d20017504800046c005b0f0f0000591800130118001b5f180000ae00f31203030000504f534954494f4e00434f4c4f5200544558434f4f5244004f53474e84560100700026680002020570004f000000747000014f0000007a700001120c180017011800130330003f53565f8b0005f100ab534844520c020000400001008300e4004504468e204400041000049e02041000007400211500fc006703f2101000000c0013010c003132101028007567000004f22010e400106528002520100c00223220280004180012031401100214006238000008f2003c0022561508000490000004006a3200000af20018000001001306940022460e08000f2800010060002aa61a2800170070002a460e3000170390000010002656052000004c0017126800170118001111ee030654001f0128000400d2032fa60a2800001a2068006a14000000f60f280001980003540126461e5800043e034436000005680135461010140004700122461e5000113e570117198a02084e020002021f05a4030813010601ff03554e4954595f55495f414c504841434c4950bc03ffffffa300b7035f5f52454354bc03ffffff921f027807060fd403ffffff961f023410100801000f34001513012c04af5f436c697052656374006c10031b605c000066011728120313051c008f6e07000002010101340413f00141f92d91895c145462b65f9f9f00fdc93700264807340462b8000000ec0034040fc403261f0fc403041f03c40323005004132c3800170886111b008c00b153565f54617267657400abf803205406f8034a00009501f803007e01105a3b0012601402625818000400700c0066555500006210e803266210e80304c0031300c0031205a211230932fc02220680600000911235468020aa11543200000cc2240012144c002206041000290240a301103f04004443000005300013a6a403440e000007680014e644031500fc03150b60001284780017050c001704780044450000099803054800137e1c04031001006c0313425000133a2c00262a80580054380000078218000328001201c800143f60000888030c600004240008c4000c840013336400048400040800043405221200d803041c00171a7c010be4042380418002072c05240972300103480023460230001202640000980413827000172a5c000c8c001734a800131a0800130a0800081c001b2acc0000e00004c4000c3800081c00172a1c001303080213220c001b0a040100f8001622540001f80015039c0149803f00202000023c000b38010c5801170a48005b1d000007427c00005c004017b7d1383c00005401120444010134001700c80500b8000720002700047c0117381c0005f8052402103c03240ab2a4011208580013049c06170330001737d40123a60a30001a03dc011338a40004600008b40317088800130258001702280013363c001e01b403045f052b07f2040723460e88063c200005cc0218182007181e58001080040405080013010c021301b40113017c011b011c001f2a1c00081b3a1c00441f0004030c001b3460000cc00208600017004400133388021f01c002041b22380004bc0004a4021701a402089c001b1d58001701640204e401049c0802b21703440106e401360a7220e40104580144cdcccc3e040003d0013a0582209401001c08401500000108022bf220240903a4010240080c98071b2a98070f7413091fb2b0071af001edf5137d27e71e388828b6ff8d642a0237001f8cb007c41398b0071fa6b007ffffffff841b005007044403576f1283ba311c00170ab406025a1d066c070ff407ffbc1f2ef4070d07d8132f3608f40719f0015e43f5085ae4ef9e6f4ad7ce06881cd637002f1008f4076c1f03f40743221c07f4071fc7f40734040c001f030008ffffffff1c22360928000008000400081b12e401541d0000083278060360040434041306200013c2200026a68e180000c80303740506fc071c0efc070604001338380404f003130174030304170f180806041c0008b4000f7808890824080c78081f3a7808080c38000878081f3a7808542f96077808271f0a7808082f96037808111b3178080f681c211faa90081af0016e986b02f41da2b22dc7fb55c47f1c6237001f849008c4139090081fe49008ffffffff6c0f9010010c1c0700700813621400220611a80026068178080070080420002c5606780004700806d80800680026e68a4000264610b808042000134608000ab80814001c011c077000250601700309c0070870071b3800030874080068030c581108a8070f7c11ffdb500000000000b10800000064000000d0020001002634030c005304060000f80c0026fc080c0062f40b0000a80c0c00629c180000340d0c0062d02500005c0e0c00532c340000f40c006eba750a0c03000100f1201200000050476c6f62616c7332363039363038383334000030000000090000000b0000005f4272696768746e657373340013010400044400132c4800f5045f4d61696e5465785f546578656c53697a650030001b04780010143000ff04506978656c416c706861496e74656e7369747960000155240000000f3000092b000d8c0055200000000a2c000a8400082800141cdc00af53617475726174696f6e28000251280000001028005f6861646f77a8000a56180000000e2c007f4f6666736574588000031f102c00011f592c00031714ac011f56ac01004090000000dc01100650005f436f6c6f7278010313807400e3756e6974795f4d6174726978565068020304000478005540000000132c00df4f626a656374546f576f726c6430000204010000880017080c020317006f08ffffffff047002080248002f0108e800090218012f0104d00215af33373038303434363831d002ff9008ac010fd002a508c4000ed0020e24000fd0021dd33430353136373935383400004418020fd002111340fc02af5f436c697052656374005001031f20f8024c1f38f802181f34f802141f30f802141f3cf8028408d4010fc805a508c4000ec8050ee8000fc8051daf31373731353739373435f802ffb808d4010ff802a508c4000ef8020f24000308f8022f1900010003ff08680c00006000000273090000f5020000b0000000c30800010026007800ff12b56aaa5b485dcc1937ed8e1b69e80cb5802379da8c2294aeea954e27eee5cdca0001002cd34c4f4d53000001010a000800625501f006c01e0000910201d11002474c534c2e7374642e3435b902f11900a0040001ff0e0404edc2a5f306001f8202c702a0020407551f00000076735f544558434f4f52442c00ce4714090023000123100123040300f104000002100422011000210010261e01104022000c00f31786031e00108a011e00930202a1040202a6020620b7020206043e02060739080206ae030207060100f0023e02020a390b0202b502022001bb040d02a301e23e020206b702060602bb040d04001100f005073e0e0612391c02063e020112391e0201bb0406ae03603fcc041202022a001014fc0040bb040d06a80d4289031406f501f107ab02023c3e02003d393e0200b502082000bb044302032b0013435d00600606bb040d0814004239080a060400101c1400e00605000000b702120603bb040d16250340394714064100026c0031430c02140010222d00210e07140000960050803fbb04062f00e0009402103e0206b30139b40102061500f10717b7d1383e04066f39ba0102063e34076fbb040d1c0867003036b301240151fe0139ff01e800e0073981020201ec040704b801b2010400f0033947480639b4011e063e1e030739c60202035400f017cdcccc3edc046f020202023e0c03063e0e0707b702040d043e0207da023e0407fe01b70204430f00f00fdf02c60602b7050003180239d501a2030739d501ca010739d8023c0739dba001f014dd02040739e0020607130fa1050c0e01060202c00a120404041315060c14010702022d7001f00b10c81012020c020107022244070202040405020322240001120a140012302400f00a4a120206024b12060602221200011202145c120201032722160d005618010702424c001006380016484c00704a00130f040c2f800000090013328900680208021315028900104a1400f000011202364b12020402223c00013d0a1000f40b48c70a07020402c10a060606031347061d462200061347021d465400104b0900204a065300001700832200021347041d461600f203025e1347025044220002013d042e011202705100c2220600013d0234010702a2018200001800b1060222a6010013470209445f00314702550900716c060201255e60190002610024094480001866800010638000700107022c3f0702080031c8014b6e0080ca01000107041a3dde016100010702d2010b0032184a6f330112400f00134b0f0023de01430151060322e0014401137a9100230944700016069f00154b0e00019d0044060985012e001446bf00802887018901220c00bc00118b1f0041010602141a00618d018e012216f7000f390000542591019301db00001a00148b2400166324003797019924003304634661004036c8100600017308000106020a3f330123a301b60040080222141a0080164b06040402221a0c00e01c7c0604012baa01ab01a8012220120015526c00143f3700066c0012081a0052ce16b301046900420706e6024f01213f6f85003176d00a5603015e01b2220c00016f020e010702c084013100c81018000189002384012c0060016f021a4a6fbb00101c3000131e4b0013601f0002b8013406029630000dba01200206ba01f20501b301023ea71e0700ba1e00050d1806010704ec7700801c220800991e0418350022a603b000f602220e00991e0a1809016f0c10010702ac03060220ae03370213b0290000450111e3450106900001b30317be330011c0330012aa0c016afc010702c603750226b4022d0020b602000250504622008cc9016150850122008e0a00608b0122009001cc0200340022c002d10229da032703031703039e02617c0602012bfbc201041c007101070c02c416fea401a00a0013b40102800285011f0112020d0011460c0064c714b301020613002322000a001f8b2a00161f44290015021d0030a71e039b0131010318d5030f380301439d029f021b010aff021650240037a302a524000f4800024125aa02acfb00264702800311101a0031af02b05b05480602143f5b0001d70300800230060420e0026102028202220454024006a71e05b90082030b1804010704dcda01170054022ff00454020217e8210210ea21022506f0160211061602160c2100170ee401f003d10204c702442200048d1e186d0107729605b90221014a0e02681e008d1e8806c30803820a3f00600ac3080933bf0f00c3089f0b4852535a5c5e555ac108002a555e15001131400be1161e00100a061010020610470203e2084640012340d008f00101476403000b0100010b0101010b01031a00f000181e0010021e01100e1e0110041e0204000fe0080501ba07600a0201b502066e08110ed40851bc0202070f0500c5ce02021011073e0202123913f90811155d160008001301f00852bb04151602140012129b08720806bb040e28014d00f0090644ce02020706453e020346394702033e100307395004037900f006b7020a06023e020358395902033e020158395b02011d00613e0403063e0c1e0810150f088068940204b702026b0c00506cb702040e0900616fc60602d7012308f01266c4010739690607396d0807397006070107c901024d07020202552318181416178707f2004a07021c0222240023180214161601bf061126260032004a0731041230fc0383320023180414162325001136250014aa25001240250010427d0411442900102c2900204b07ee05104c070714507c00340214177c0010061c03011200047c001a5e7c001216570012182500047c001a6c7c001224250083260023180c14172c2500218401260014ff2600113c2600f80213500448162200040107060213180214238a003101580c2308d40704a8012202002360044816448206502360024816d50400f5021319f40c000100130d0c00130e1c0d1f0fa80c081301e80cf70e554e4954595f55495f414c504841434c49500000db0c000061000002e6c00c2f3609c00c3bff01cd1b49bc21d57839c8e36903a255a98ec00c391374c00c2f2420c00c143f9402d9c00c3d1faac00cff24b2bb04063a6f1283bab70206c80c5083023984023500200d10c30f633e0c01073993d00c40dc01d60104000ad00c1fd8d00c0f10ecd00c248302d00c10f1d00c1adbd00c50ee010739ead00c10edb00110efd00c11f2d00c1fc5d00cffffffff76051c0001ea0106fc0b1208bb0b11c8af0b20ba016c0c1585760c1385760cf001d9140d0202ba03f003c4100d040402cba20c3702f6038d0c208c1e4901600802c41683020702222400400007330d1e85e00c086a001f8b2a00161f442900150f330d163faf02b1330d0e3fb502b7330d0e3fbc02be330d043fc102c2330d141fa6330d042d8004330d2f9405b70202268c045702208e0490032f9404330d1248e30204d9330d1fba330dfffff61f00340d36002f0d925f524543540000040ef419260f0b340d2f5f0a340d3bff018c16afcd7c9a3db8baf3656b515e06b4340d39139d340d2f8c24fe0309258f0f340d6f8402bc028103360d063e55040102043a47140a4b0d1b08570d0f4e0d056f8a031e021070520d0c12be520d1f07530d031f05530d7a1806530d1f07530d0c1f08530d2611096700123a4b0d2080020a1a022605208302e900310d06042100810ab3010239830260560d40ac02a60204000a560d2f8003560d031610560d6595033e040780560d799a03c60602ad06560df006be02073993033e0739960306073998030407399b03560d2f9706560dffffffff3a013a0853c6010702c20b00114b330335de03003202010900262200430201620d15fd620d1346321a01400060101315040c878b00031000f407ce168002020a022d8c020404041001800202184480024d04201a00350407300051ab0107021e0a0011013a0010063a0040020202b03a00122a3a006100010405222c650d1582a50d75060202e601e001a60c011d002685011e0035ee01e80701031f00178b1f0035f601f01c01031f0016441e0045fe01f8017604410702b203610467b0010702b603530556010702bc032b0511be46012a5085520d04e903195055010d1f00035801510402c41680570e297a00d50008ff0007040e3c820246e0000f2a00101f442900150f570e02053f04036d04019d0439d702d9e6001e44570e39dd02df570e0f4800014425e402e6580e1944570e3fe902ea570e141ff6570e041ed0570e12e4570e1b6cb80317dc570e11de570e1fe4570e0d02d601578b03048103570e218a06dd02536c010702a85d0e1f20901bffffff221f02901b080f740e0522840ea81b178f740e1fdf740e3cff01c9b20b9eda37ccdc90661def9e368e0f740e3913b2740e2fc425740e145f8202cc0297740e081f02740e391086740e6f94011e001096750eff221036550a0e882806750ec008b30104391c060639ff01124d00104af81b773e0606890239bdf21b413981020c980e40cc02c6020400403e900103410e0fe61b0e10aa900e1589900e10af900e1ad7900ea0ea020739a8033c0739ab900e10ad900e11b0900e2fc106e61bffffffff5404490c2e5046e61b1e50840e1985840e808902040c042dfe010e0000880248b40104803b0e30ce01c84800178c7428083c0e32d601d01f00023d0e0a5f0056ba0107022e690000b30e036900110eb20d3d950246860e145568003e950285850e1155670040011202323d0408610e332238008800034503298c02350e03c1000518000e560e184446010b41000b1f1d18061f1d11acaf0015be210118be1f1d48ac04e2041f1d2de8041f1d510602c41689c80e222200400007c80e1ebe750e086a001f8b2a00161f442900150f1f1d163fe702e91f1d0e39ed02ef24000fe3040139f302f5a1012b098bc3010126003ff902fbc701010ee00e0fec010002ec0e2f9e033d2b0508fa0e1efcfa0e2f9006220402268805c203208a05fb042f9005511d1244a1030497fa0e607901077eb60639110f842affffff0d50000f000000
+  stageCounts:
+  - 2
+  - 1
+  m_Dependencies: []
+  m_NonModifiableTextures: {}
+  m_ShaderIsBaked: 1
+  m_DefaultTextures: {}
+  errors: []
+  m_CompileInfo:
+    m_Snippets: {}
+    m_MeshComponentsFromSnippets: 0
+    m_HasSurfaceShaders: 0
+    m_HasFixedFunctionShaders: 0
+  m_CompileSmokeTestAfterImport: 0
