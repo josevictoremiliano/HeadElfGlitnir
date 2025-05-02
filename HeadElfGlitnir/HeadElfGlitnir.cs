@@ -18,7 +18,7 @@ namespace HeadElfGlitnir
     {
         public const string PluginGUID = "jotav.grit";
         public const string PluginName = "HelmetElf";
-        public const string PluginVersion = "1.0.2";
+        public const string PluginVersion = "1.1.0";
         private Harmony _harmony;
         public static AssetBundle ArmorBundle;
         public static List<string> headList = new List<string> { "HeadElf" };
@@ -80,6 +80,7 @@ namespace HeadElfGlitnir
 
                 // Configurar o tipo do item diretamente aqui
                 newItemDrop.m_itemData.m_shared.m_itemType = ItemDrop.ItemData.ItemType.Helmet;
+                newItemDrop.m_itemData.m_shared.m_helmetHideHair = ItemDrop.ItemData.HelmetHairType.Default;
 
                 // Restante da configuração do ItemConfig
                 ItemConfig config = new ItemConfig
@@ -124,6 +125,14 @@ namespace HeadElfGlitnir
             {
                 Debug.LogError($"Could not find resource with name: HeadElfGlitnir.Resources.helmetElf ");
                 return null;
+            }
+
+            // Verificar se o AssetBundle já está carregado
+            AssetBundle existingBundle = AssetBundle.GetAllLoadedAssetBundles().FirstOrDefault(bundle => bundle.name == fileName);
+            if (existingBundle != null)
+            {
+                Debug.Log($"AssetBundle '{fileName}' já está carregado.");
+                return existingBundle;
             }
 
             using (Stream stream = executingAssembly.GetManifestResourceStream(resourceName))
